@@ -1,15 +1,9 @@
 import React from 'react'
-import {
-  Text,
-  View
-} from 'react-native'
+
+import OnboardingContainer from '../../containers/Onboarding'
 
 const Onboarding = () => (
-  <View>
-    <Text>
-      Olá onboarding!
-    </Text>
-  </View>
+  <OnboardingContainer />
 )
 
 export default Onboarding

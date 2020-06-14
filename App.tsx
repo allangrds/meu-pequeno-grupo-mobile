@@ -1,8 +1,6 @@
 import React from 'react'
 import {
   StatusBar,
-  View,
-  Text,
 } from 'react-native'
 import { AppLoading } from 'expo'
 import {
