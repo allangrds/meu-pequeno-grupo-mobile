@@ -7,9 +7,7 @@
         "eslint:recommended",
         "plugin:react/recommended",
         "plugin:@typescript-eslint/eslint-recommended",
-        "plugin:@typescript-eslint/recommended",
-        "prettier",
-        "prettier/react"
+        "plugin:@typescript-eslint/recommended"
     ],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
@@ -26,7 +24,6 @@
         "import"
     ],
     "rules": {
-        "prettier/prettier": "error",
         "indent": [
             "error",
             4
