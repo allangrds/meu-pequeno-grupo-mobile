@@ -1,13 +1,17 @@
-import React from 'react';
-import { StatusBar } from 'react-native';
-import { AppLoading } from 'expo';
+import React from 'react'
+import {
+  StatusBar,
+  View,
+  Text,
+} from 'react-native'
+import { AppLoading } from 'expo'
 import {
   Roboto_400Regular,
   Roboto_500Medium,
   useFonts,
-} from '@expo-google-fonts/roboto';
+} from '@expo-google-fonts/roboto'
 
-import Home from './src'
+import Routes from './src/routes'
 
 const App = () => {
   const [fontsLoaded] = useFonts({
@@ -16,7 +20,7 @@ const App = () => {
   })
 
   if (!fontsLoaded) {
-    return <AppLoading />;
+    return <AppLoading />
   }
 
   return (
@@ -25,7 +29,7 @@ const App = () => {
         barStyle="dark-content"
         backgroundColor="transparent"
       />
-      <Home />
+      <Routes />
     </>
   )
 }
