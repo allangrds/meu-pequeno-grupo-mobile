@@ -4,7 +4,7 @@ import { AppLoading } from 'expo';
 import {
   Roboto_400Regular,
   Roboto_500Medium,
-  useFonts
+  useFonts,
 } from '@expo-google-fonts/roboto';
 
 import Home from './src'
