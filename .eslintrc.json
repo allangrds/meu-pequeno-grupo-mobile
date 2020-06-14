@@ -22,7 +22,8 @@
     "plugins": [
         "react",
         "@typescript-eslint",
-        "prettier"
+        "prettier",
+        "import"
     ],
     "rules": {
         "prettier/prettier": "error",
@@ -42,5 +43,18 @@
             "error",
             "never"
         ]
+    },
+    "settings": {
+        "import/resolver": {
+            "node": {
+                "paths": ["src"],
+                "alias": {
+                    "_assets": "./src/assets",
+                    "_components": "./src/components",
+                    "_containers": "./src/containers",
+                    "_scenes": "./src/scenes"
+                }
+            }
+        }
     }
 }

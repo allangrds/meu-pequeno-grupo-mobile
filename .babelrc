@@ -1,0 +1,18 @@
+{
+    "plugins": [
+      [
+        "module-resolver",
+        {
+          "cwd": "babelrc",
+          "root": ["./src"],
+          "extensions": [".tsx", ".js", ".ios.js", ".android.js"],
+          "alias": {
+            "_assets": "./src/assets",
+            "_components": "./src/components",
+            "_containers": "./src/containers",
+            "_scenes": "./src/scenes"
+          }
+        }
+      ]
+    ]
+  }

@@ -1,11 +1,13 @@
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React from 'react'
+import { View,Text } from 'react-native'
 
 export default function App() {
   return (
     <View style={styles.container}>
       <Text>
-        Open up App.tsx to start working on your app!</Text>
+        Hello World 2
+      </Text>
+      <AppD />
     </View>
   );
 }
