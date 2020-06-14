@@ -5,7 +5,7 @@
         {
           "cwd": "babelrc",
           "root": ["./src"],
-          "extensions": [".tsx", ".js", ".ios.js", ".android.js"],
+          "extensions": [".ts",".tsx", ".js", ".ios.js", ".android.js"],
           "alias": {
             "_assets": "./src/assets",
             "_components": "./src/components",

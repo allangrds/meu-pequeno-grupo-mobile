@@ -1,57 +1,58 @@
 {
     "env": {
-        "browser": true,
-        "es2020": true
+      "browser": true,
+      "es2020": true
     },
     "extends": [
-        "eslint:recommended",
-        "plugin:react/recommended",
-        "plugin:@typescript-eslint/eslint-recommended",
-        "plugin:@typescript-eslint/recommended"
+      "airbnb-typescript"
     ],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
-        "ecmaFeatures": {
-            "jsx": true
-        },
-        "ecmaVersion": 11,
-        "sourceType": "module"
+      "ecmaFeatures": {
+        "jsx": true
+      },
+      "ecmaVersion": 11,
+      "sourceType": "module",
+      "project": "./tsconfig.json"
     },
     "plugins": [
-        "react",
-        "@typescript-eslint",
-        "prettier",
-        "import"
+      "react",
+      "@typescript-eslint",
+      "import"
     ],
     "rules": {
-        "indent": [
-            "error",
-            4
-        ],
-        "linebreak-style": [
-            "error",
-            "unix"
-        ],
-        "quotes": [
-            "error",
-            "single"
-        ],
-        "semi": [
-            "error",
-            "never"
-        ]
+      "indent": [
+        "error",
+        2
+      ],
+      "linebreak-style": [
+        "error",
+        "unix"
+      ],
+      "quotes": [
+        "error",
+        "single"
+      ],
+      "semi": [
+        "error",
+        "never"
+      ],
+      "@typescript-eslint/semi": [
+        "error",
+        "never"
+      ]
     },
     "settings": {
-        "import/resolver": {
-            "node": {
-                "paths": ["src"],
-                "alias": {
-                    "_assets": "./src/assets",
-                    "_components": "./src/components",
-                    "_containers": "./src/containers",
-                    "_scenes": "./src/scenes"
-                }
-            }
+      "import/resolver": {
+        "node": {
+          "paths": ["src"],
+          "alias": {
+            "_assets": "./src/assets",
+            "_components": "./src/components",
+            "_containers": "./src/containers",
+            "_scenes": "./src/scenes"
+          }
         }
+      }
     }
 }
