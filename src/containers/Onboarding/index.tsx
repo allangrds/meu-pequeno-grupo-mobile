@@ -7,7 +7,7 @@ import { Button } from '../../components'
 import FirstImage from '../../assets/images/scenes/onboarding/first.svg'
 import SecondImage from '../../assets/images/scenes/onboarding/second.svg'
 
-const Onboarding = () => (
+const Onboarding = ({ goToLogin }) => (
   <OnboardingSwiper
     bottomBarHighlight={false}
     nextLabel="Próximo"
@@ -18,14 +18,19 @@ const Onboarding = () => (
     NextButtonComponent={({ nextLabel, onPress }) => (
       <View style={styles.view}>
         <Button
-          text={nextLabel}
+          color="primary"
           onPress={onPress}
+          text={nextLabel}
         />
       </View>
     )}
     DoneButtonComponent={() => (
       <View style={styles.view}>
-        <Button text="Começar" />
+        <Button
+          color="primary"
+          onPress={goToLogin}
+          text="Começar"
+        />
       </View>
     )}
     pages={
