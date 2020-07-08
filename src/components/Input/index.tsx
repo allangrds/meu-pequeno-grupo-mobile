@@ -12,6 +12,7 @@ const Input = ({
   placeholder,
   type,
   error,
+  value,
 }) => {
   const [showPassword, setShowPassword] = useState(false)
   const [active, setActive] = useState(false)
@@ -65,6 +66,7 @@ const Input = ({
           onBlur={handleOnBlur}
           onFocus={handleOnFocus}
           secureTextEntry={secureTextEntry}
+          value={value}
         />
         {
           type === 'password'
