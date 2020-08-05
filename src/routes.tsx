@@ -2,7 +2,10 @@ import React from 'react'
 import { NavigationContainer } from '@react-navigation/native'
 import { createStackNavigator } from '@react-navigation/stack'
 
-import Onboarding from './scenes/Onboarding'
+import {
+  Login,
+  Onboarding,
+} from './scenes'
 import { getValue, setValue } from './utils/helpers/asyncStorage'
 
 const Stack = createStackNavigator()
@@ -34,7 +37,7 @@ const Routes = () => {
         />
         <Stack.Screen
           name="Login"
-          component={Onboarding}
+          component={Login}
         />
       </Stack.Navigator>
     </NavigationContainer>
